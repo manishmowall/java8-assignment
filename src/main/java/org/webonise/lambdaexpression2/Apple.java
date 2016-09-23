@@ -1,4 +1,4 @@
-package org.webonise.lambdaexpression;
+package org.webonise.lambdaexpression2;
 
 public class Apple {
    //considering weight of Apple is integer type only.

@@ -1,4 +1,4 @@
-package org.webonise.lambdaexpression;
+package org.webonise.lambdaexpression2;
 
 @FunctionalInterface
 public interface AppleFilter {

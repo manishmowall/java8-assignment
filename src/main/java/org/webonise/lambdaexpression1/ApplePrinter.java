@@ -1,4 +1,4 @@
-package org.webonise.lambdaexpression;
+package org.webonise.lambdaexpression1;
 
 @FunctionalInterface
 public interface ApplePrinter {
