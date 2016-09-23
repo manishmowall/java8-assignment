@@ -14,13 +14,13 @@ public class Application {
         Application application = new Application();
         List<Apple> apples = application.generateApples();
 
-        AppleFilter appleFilter1 = (apple) -> apple.getWeight() < 3;
-        application.prettyPrintApples(apples, appleFilter1);
+        AppleFilter weightFilter = (apple) -> apple.getWeight() < HEAVY_BENCHMARK;
+        application.prettyPrintApples(apples, weightFilter);
 
         logger.log(Level.INFO, "==================================================");
 
-        AppleFilter appleFilter2 = (apple) -> apple.getColor().equals("red") && apple.getWeight() < HEAVY_BENCHMARK;
-        application.prettyPrintApples(apples, appleFilter2);
+        AppleFilter redColorWeightFilter = (apple) -> apple.getColor().equals("red") && apple.getWeight() < HEAVY_BENCHMARK;
+        application.prettyPrintApples(apples, redColorWeightFilter);
     }
 
     public void prettyPrintApples(List<Apple> apples, AppleFilter appleFilter) {
