@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 
 public class Application {
     static final Logger logger = Logger.getLogger(Application.class.getName());
+    static final int HEAVY_BENCHMARK = 3;
 
     public static void main(String[] args) {
 
@@ -18,7 +19,7 @@ public class Application {
 
         logger.log(Level.INFO, "==================================================");
 
-        AppleFilter appleFilter2 = (apple) -> apple.getColor().equals("red") && apple.getWeight() < 3;
+        AppleFilter appleFilter2 = (apple) -> apple.getColor().equals("red") && apple.getWeight() < HEAVY_BENCHMARK;
         application.prettyPrintApples(apples, appleFilter2);
     }
 
